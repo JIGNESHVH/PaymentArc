@@ -1,0 +1,21 @@
+.env
+node_modules/
+dist/
+data/
+
+# Foundry build output
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+
+# Python (if any)
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+
+# Local handoff notes and mock store
+*handoff*.md
+HANDOFF*.md
+apps/mock-store/
+.mcp.json

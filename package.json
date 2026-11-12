@@ -1,0 +1,29 @@
+{
+  "name": "arcpay",
+  "version": "1.0.0",
+  "description": "ArcPay - Pay any UPI QR in India using Stablecoins with Gasless On-Chain Escrow",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "services/api-node"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:web\"",
+    "dev:backend": "npm --prefix services/api-node run dev",
+    "dev:web": "npm --prefix apps/web run dev",
+    "build:backend": "npm --prefix services/api-node run build",
+    "build:web": "npm --prefix apps/web run build",
+    "test:contracts": "cd contracts && forge test"
+  },
+  "keywords": [
+    "arc",
+    "arcpay",
+    "stablecoin",
+    "upi",
+    "paymaster",
+    "gasless",
+    "web3"
+  ],
+  "author": "JIGNESHVH",
+  "license": "MIT"
+}
